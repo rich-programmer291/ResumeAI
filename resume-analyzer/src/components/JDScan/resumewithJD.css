@@ -1,0 +1,95 @@
+.app__page{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.app__columns {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.app__title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.app__container{
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__dropzone {
+    margin: 0;
+    padding: 1rem;
+    width: 25rem;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.app__dropzone.active {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+.app__file-info {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #949494;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.app__file-icon {
+    height: 1rem;
+    width: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.app__file-space{
+    padding: 0.3rem;
+    border: 0.1rem dashed white;
+    border-radius: 5px;
+}
+
+.app__JDinput {
+    height: 50lvh;
+    width: 50lvh;
+    padding: 1rem;
+    border: 0.1rem dashed white;
+    border-radius: 0.3rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 0.8rem;
+    font-family: inherit;
+}
+
+.app__JDinput.active{
+    outline: none;
+}
+
+.app__btn{
+    margin-top: 2rem;
+}
+
+.results{
+    margin-top: 5rem;
+    text-align: left;
+}

@@ -1,0 +1,37 @@
+/* Footer */
+.footer {
+    background-color: rgba(56, 56, 56, 0.2);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 50px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .footer p img{
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.4rem;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-icons img {
+    width: 1.5rem;
+  }

@@ -1,0 +1,92 @@
+.home-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgb(28, 28, 28);
+}
+
+.hero-section {
+    background: linear-gradient(90deg, #007bff 0%,#b0229f 55%, #6610f2 100%);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.hero-description{
+    color: white;
+}
+
+.cta-button {
+    background-color: white;
+    color: rgb(28, 28, 28);
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(255,255,255,0.75);
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.1rem solid white;
+    text-align: center;
+    width: 16rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 10px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+.brand-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
