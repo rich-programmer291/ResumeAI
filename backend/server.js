@@ -37,7 +37,7 @@ app.post('/analyze', upload.single("resume"), async (req, res) => {
         const pdfText = await pdfParse(req.file.buffer);
         // console.log(pdfText);
         const aiAnalysis = await analyzeResume(pdfText.text);
-        console.log(aiAnalysis, "SERVER RESPONSE");
+        // console.log(aiAnalysis, "SERVER RESPONSE");
         res.status(200).json({ data: aiAnalysis });
     } catch (error) {
         res.status(500).json({ error: "Error processing AI analysis" });
@@ -45,17 +45,17 @@ app.post('/analyze', upload.single("resume"), async (req, res) => {
 });
 
 app.post('/analyze-with-jd', upload.single("resume"), async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     const {jobDesc} = req.body;
 
     if (!req.file) return res.status(400).json({ error: "No file uploaded" });
     if (!jobDesc) return res.status(400).json({ error: "No Job Description provided" });
-    console.log(jobDesc);
+    // console.log(jobDesc);
 
     try{
         const pdfText = await pdfParse(req.file.buffer);
         const aiAnalysis = await analyzeResumewithJD(pdfText.text,jobDesc);
-        console.log(aiAnalysis);
+        // console.log(aiAnalysis);
         res.status(200).json({ data: aiAnalysis });
     }
     catch(error){
