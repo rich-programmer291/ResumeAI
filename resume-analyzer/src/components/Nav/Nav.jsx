@@ -12,10 +12,10 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/scan">General Scan</Link>
+          <Link to="/scan">ATS Scan</Link>
         </li>
         <li>
-          <Link to="/scan-using-jd">Scan with JD</Link>
+          <Link to="/scan-using-jd">JD-Based Scan</Link>
         </li>
       </ul>
     </nav>
