@@ -23,12 +23,12 @@ An AI-powered resume analyzer that evaluates resumes based on ATS compatibility 
 - **Frontend**: Render  
 - **Backend**: Render  
 
----
+
 
 ## **📸 Screenshot**  
 ![ResumeAI Preview](https://github.com/user-attachments/assets/2a751495-f260-4222-a0b4-61584ad4cad8)  
 
----
+
 
 ## **📌 How It Works?**  
 
@@ -37,7 +37,7 @@ An AI-powered resume analyzer that evaluates resumes based on ATS compatibility 
 3. **Job Description Comparison** – Paste a job description to see how well your resume matches.  
 4. **Receive AI-Powered Insights** – Improve your resume with data-driven suggestions.  
 
----
+
 
 ## **🌍 Deployment**  
 
