@@ -30,7 +30,7 @@ export async function analyzeResumewithJD(resumeText, jobDescription) {
 
     Example output:
     {
-      "ats_score": 65.3/100,
+      "ats_score": 65.3,
       "skills": ["React.js", "Node.js", "MongoDB", "Docker"],
       "technologies": ["AWS", "Kubernetes", "GraphQL"],
       "strengths": ["Strong problem-solving skills", "Experience in full-stack development"],
