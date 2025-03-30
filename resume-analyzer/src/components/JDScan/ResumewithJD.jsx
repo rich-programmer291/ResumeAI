@@ -12,6 +12,8 @@ const ResumewithJD = () => {
     const [error, setError] = useState(null);
     const [isActive, setIsActive] = useState(false);
 
+    const backend_url = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000" ;
+
     // Handle file drop
     const onDrop = useCallback((acceptedFiles) => {
         if (acceptedFiles.length > 0) {
@@ -40,7 +42,7 @@ const ResumewithJD = () => {
         formData.append("jobDesc", jd);
 
         try {
-            const response = await fetch("http://localhost:5000/analyze-with-jd", {
+            const response = await fetch(`${backend_url}/analyze-with-jd`, {
               method: "POST",
               body: formData,
             });
@@ -55,7 +57,6 @@ const ResumewithJD = () => {
           }
 
     }
-
 
     return (
         <div className="app__page">
@@ -84,8 +85,8 @@ const ResumewithJD = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <button onClick={handleSubmit} className="submit-btn app__btn" disabled={loading}>
                 {loading ? "Analyzing..." : "Analyze Resume"}
             </button>
@@ -101,4 +102,4 @@ const ResumewithJD = () => {
     )
 }
 
-export default ResumewithJD
+export default ResumewithJD;

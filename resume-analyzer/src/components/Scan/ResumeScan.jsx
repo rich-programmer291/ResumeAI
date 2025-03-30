@@ -10,6 +10,8 @@ export default function ResumeScan() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
+    const backend_url = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000" ;
+
     // Handle file drop
     const onDrop = useCallback((acceptedFiles) => {
         if (acceptedFiles.length > 0) {
@@ -38,7 +40,7 @@ export default function ResumeScan() {
         formData.append("resume", file);
 
         try {
-            const response = await fetch("http://localhost:5000/analyze", {
+            const response = await fetch(`${backend_url}/analyze`, {
                 method: "POST",
                 body: formData,
             });
@@ -48,7 +50,6 @@ export default function ResumeScan() {
             }
 
             const responseData = await response.json();
-            // console.log("Server Response:", responseData.data);
             setAnalysis(responseData.data);
         } catch (err) {
             console.error("Error analyzing resume:", err);
