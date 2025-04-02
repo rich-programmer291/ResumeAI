@@ -1,5 +1,6 @@
-import React, {useNavigate} from "react";
+import React from "react";
 import "./home.css";
+import {useNavigate} from 'react-router-dom';
 import Footer from "../Footer/Footer";
 
 const Home = () => {
