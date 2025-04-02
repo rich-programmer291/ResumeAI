@@ -1,15 +1,17 @@
-import React from "react";
+import React, {useNavigate} from "react";
 import "./home.css";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
+  const navigate = useNavigate();
+  
   return (
     <>
     <div className="home-container">
       <header className="hero-section">
         <h1>Welcome to ResumeAi <sup><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/FFFFFF/sparkling--v1.png" alt="sparkling"/></sup></h1>
         <p>Enhance your resume with AI-powered analysis and job description matching.</p>
-        <a href="/scan" className="cta-button">Get Started</a>
+         <button className="cta-button" onClick={() => navigate("/scan")}> Get Started </button>
       </header>
 
       <section className="features">
