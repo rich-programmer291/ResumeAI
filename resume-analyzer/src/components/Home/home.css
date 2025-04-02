@@ -34,8 +34,9 @@
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
-    border:none;
-    cursor:pointer;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
